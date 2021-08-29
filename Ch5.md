@@ -12,7 +12,6 @@ x\^\mu
 {(\Lambda\^{-1})\^\nu}\_\mu
 \partial\_\nu
 $$
-
 Consider how the spinor is transformed.
 Find $S(\Lambda)$ such that
 $$
@@ -159,7 +158,7 @@ $$
 $$
 We can find the right-top $2\times2$ block matrix represents Lorentz boost.
 Secondly, we substitute 
-$\Delta\omega\_{0i}=0\ (i\in\\{2,3\\})$ 
+$\Delta\omega\_{0i}=0\ (i\in\\{1,2,3\\})$ 
 to have
 $$
 {\Lambda\^\mu}\_\nu 
@@ -176,6 +175,117 @@ $$
 $$
 We can find the right bottom $3\times3$ antisymmetric block matrix represent an infinitesimal rotation.
 (Remind that rotation is represented by an antiymmetric matrix.)
+
+Let us evaluate the $S(\Lambda)$ matrix.
+Since we are focusing on the infinitesimal transformation,
+${\Lambda\^\mu}\_\nu = {\delta\^\mu}\_\nu + \eta\^{\mu\bullet}\Delta\omega\_{\bullet\nu}$,
+we can expand the $S(\Lambda)$ matrix up to the first order in the parameter $\Delta\omega\_{\mu\nu}$,
+$$
+S(\Lambda)
+\simeq
+I\_4 - \frac{i}{4}\sigma\^{\mu\nu}\Delta\omega\_{\mu\nu}
+$$
+where $\sigma\^{\mu\nu}$ is our target.
+Note that we have introduced a prefactor $-i/4$ for convenience.
+Since the transformation parameter $\Delta\omega\_{\mu\nu}$ is antisymmetric,
+the $\sigma$ matrix is also considered to be antisymmetric,
+$$
+\sigma\^{\nu\mu}\Delta\omega\_{\nu\mu}
+\=
+\sigma\^{\mu\nu}\Delta\omega\_{\mu\nu}
+\= 
+-\sigma\^{\mu\nu}\Delta\omega\_{\nu\mu}.
+$$
+
+The inverse transformation is evaluated as following:
+$$
+S\^{-1}(\Lambda) 
+\simeq 
+I\_4 + \frac{i}{4}\sigma\^{\mu\nu}\Delta\omega\_{\mu\nu}.
+$$
+We have
+$$
+{\Lambda\^\mu}\_\nu \gamma\^\nu 
+\=
+S\^{-1}(\Lambda) \gamma\^\mu S(\Lambda),
+\\\\
+({\delta\^\mu}\_\nu + {\Delta\omega\^\mu}\_\nu)
+\gamma\^\nu 
+\=
+(I\_4 + \frac{i}{4}\sigma\^{\bullet\circ}\Delta\omega\_{\bullet\circ})
+ \gamma\^\mu 
+(I\_4 - \frac{i}{4}\sigma\^{\bullet\circ}\Delta\omega\_{\bullet\circ}),
+\\\\
+{\Delta\omega\^\mu}\_\nu
+\gamma\^\nu 
+\=
+\frac{i}{4}
+\Delta\omega\_{\bullet\circ}
+[\sigma\^{\bullet\circ},
+\gamma\^\mu]\_-,
+\\\\
+\Delta\omega\_{\bullet\circ}
+\eta\^{\mu\bullet}
+\gamma\^\circ 
+\=
+\frac{i}{4}
+\Delta\omega\_{\bullet\circ}
+[\sigma\^{\bullet\circ},
+\gamma\^\mu]\_-,
+\\\\
+4\eta\^{\mu\nu}
+\gamma\^\rho 
+\=
+i [\sigma\^{\nu\rho},
+\gamma\^\mu]\_-.
+$$
+Recalling that the $\sigma\^{\mu\nu}$ is antisymmetric,
+$$
+4\eta\^{\mu\nu}
+\gamma\^\rho 
+\=
+i [\sigma\^{\nu\rho},
+\gamma\^\mu]\_-
+\=
+-i [\sigma\^{\rho\nu},
+\gamma\^\mu]\_-
+\\\\
+-4\eta\^{\mu\rho}
+\gamma\^\nu 
+\=
+i [\sigma\^{\nu\rho},
+\gamma\^\mu]\_-,
+$$
+we can obtain
+$$
+-2i(\eta\^{\mu\nu}
+\gamma\^\rho 
+-\eta\^{\mu\rho}
+\gamma\^\nu)
+\=
+[\sigma\^{\nu\rho},
+\gamma\^\mu]\_-.
+$$
+This equation implies that our $\sigma$ matrices are composed of $\gamma$ matrices.
+
+Reminding that $\sigma\^{\mu\nu}$ is antisymmetric with respect to the exchange of the indices,
+one can guess $\sigma\^{\mu\nu} = \\# [\gamma\^\mu,\gamma\^\nu]\_-$.
+Indeed, we have
+$$
+\\# [[\gamma\^\mu,\gamma\^\nu]\_-, \gamma\^\rho]\_-
+\=
+2\\# (\gamma\^\mu [\gamma\^\nu,\gamma\^\rho]\_+ - [\gamma\^\mu,\gamma\^\rho]\_+ \gamma\^\nu),
+\\\\
+\= 4\\# (\eta\^{\nu\rho}\gamma\^\mu - \eta\^{\mu\rho}\gamma\^\nu),
+$$
+where we have used $[\gamma\^\mu,\gamma\^\nu]_+ = 2\eta\^{\mu\nu}I\_4$,
+and we set $\\# = -i/2$ to obtain
+$$
+\sigma\^{\mu\nu}
+\=
+-\frac{i}{2}
+[\gamma\^\mu,\gamma\^\nu]\_-.
+$$
 
 ## Lorentz transformation
 
