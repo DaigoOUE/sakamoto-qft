@@ -109,10 +109,73 @@ $$
 \=
 \eta\_{\mu\nu} -
 \Delta\omega\_{\nu\mu} -
-\Delta\omega\_{\mu\nu}
+\Delta\omega\_{\mu\nu},
+\\\\
+\Delta\omega\_{\nu\mu}
+\=
+-\Delta\omega\_{\mu\nu},
 $$
 where the second-order infinitesimal has vanished again.
 Remind that we denote $\Delta\omega\_{\mu\nu}=\eta\_{\mu\bullet}{\omega\^\bullet}\_{\nu}$.
+Thus, we can write the infinitesimal Lorentz transformation in a matrix form,
+$$
+{\Lambda\^\mu}\_\nu 
+\=
+{\delta\^\mu}_\nu
++
+\eta\^{\mu\bullet}
+\Delta\omega\_{\bullet\nu}
+\\\\
+:=
+\begin{pmatrix}
+1 & \Delta\omega\_{01} & \Delta\omega\_{02} & \Delta\omega\_{03}
+\\\\
+\Delta\omega\_{01} & 1 & -\Delta\omega\_{12} & \Delta\omega\_{31}
+\\\\
+\Delta\omega\_{02} & \Delta\omega\_{12} & 1 & -\Delta\omega\_{23}
+\\\\
+\Delta\omega\_{03} & -\Delta\omega\_{31}&  -\Delta\omega\_{23} & 1
+\end{pmatrix}.
+$$
+Let us check this matrix represents infinitesimal Lorentz transformation.
+Firstly, we substitute 
+$\Delta\omega\_{ij}=0\ (i,j\in\\{1,2,3\\})$,
+$\Delta\omega\_{0i}=0\ (i\in\\{2,3\\})$ 
+and 
+$\Delta\omega\_{01}=-\Delta\omega$ 
+to have
+$$
+{\Lambda\^\mu}\_\nu 
+:=
+\begin{pmatrix}
+1 & -\Delta\omega & 0 & 0
+\\\\
+-\Delta\omega & 1 & 0 & 0
+\\\\
+0 & 0 & 1 & 0
+\\\\
+0 & 0 & 0 & 1
+\end{pmatrix}.
+$$
+We can find the right-top $2\times2$ block matrix represents Lorentz boost.
+Secondly, we substitute 
+$\Delta\omega\_{0i}=0\ (i\in\\{2,3\\})$ 
+to have
+$$
+{\Lambda\^\mu}\_\nu 
+:=
+\begin{pmatrix}
+1 & 0 & 0 & 0
+\\\\
+0 & 1 & -\Delta\omega\_{12} & \Delta\omega\_{31}
+\\\\
+0 & \Delta\omega\_{12} & 1 & -\Delta\omega\_{23}
+\\\\
+0 & -\Delta\omega\_{31}&  -\Delta\omega\_{23} & 1
+\end{pmatrix}.
+$$
+We can find the right bottom $3\times3$ antisymmetric block matrix represent an infinitesimal rotation.
+(Remind that rotation is represented by an antiymmetric matrix.)
 
 ## Lorentz transformation
 
