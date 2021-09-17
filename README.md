@@ -1,7 +1,7 @@
 # M. Sakamoto "Quantum theory of Fields"
 This is where [D. Oue](http://ouedaigo.webcrow.jp/index.html) inputs a Japanese textbook on the field theory and outputs some English talks.
 
-## introduction to the quantum theory of fields
+## [Introduction to the quantum theory of fields](./Ch1.md)
 a short summary comes here after reading this chapter.
 
 ## Klein--Gordon equation
