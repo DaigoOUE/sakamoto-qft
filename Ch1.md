@@ -30,7 +30,7 @@
   -\nabla^2 - \left(\frac{mc}{\hbar}\right)^2 = 0,
   \Big]
   $$
-
+- classical interpretation of the KG equation is impossible due to the presence of $\hbar$ except when $m=0$.
 
 
 ## Origin of mass
